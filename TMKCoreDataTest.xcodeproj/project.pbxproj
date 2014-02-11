@@ -16,6 +16,7 @@
 		0DFCD9D118AA050500CB8B7A /* libTMKCoreDataTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCD9B918AA050500CB8B7A /* libTMKCoreDataTest.a */; };
 		0DFCD9D718AA050500CB8B7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DFCD9D518AA050500CB8B7A /* InfoPlist.strings */; };
 		0DFCD9D918AA050500CB8B7A /* TMKCoreDataTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DFCD9D818AA050500CB8B7A /* TMKCoreDataTestTests.m */; };
+		0DFCD9E218AA093000CB8B7A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DFCD9CA18AA050500CB8B7A /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFCD9E218AA093000CB8B7A /* XCTest.framework in Frameworks */,
 				0DFCD9BD18AA050500CB8B7A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +334,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/TMKCoreDataTest.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMKCoreDataTest/TMKCoreDataTest-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -344,6 +350,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/TMKCoreDataTest.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TMKCoreDataTest/TMKCoreDataTest-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -409,6 +419,7 @@
 				0DFCD9DE18AA050500CB8B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DFCD9DF18AA050500CB8B7A /* Build configuration list for PBXNativeTarget "TMKCoreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +428,7 @@
 				0DFCD9E118AA050500CB8B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

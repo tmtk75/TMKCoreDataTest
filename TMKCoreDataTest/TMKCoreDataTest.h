@@ -7,7 +7,6 @@
 //
 #import <XCTest/XCTest.h>
 #import <CoreData/CoreData.h>
-#import "AppDelegate.h"
 
 @interface TMKCoreDataTest : XCTestCase
 
