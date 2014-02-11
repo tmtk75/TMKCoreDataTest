@@ -7,11 +7,12 @@ Pod::Spec.new do |s|
                    Support on-memory persistent storage for CoreData
                    DESC
 
-  s.homepage     = "https://github.com/tmtk75/TMKCoreDataTest"
-  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
-  s.author       = 'Tomotaka Sakuma'
-  s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/tmtk75/TMKCoreDataTest.git", :tag => "0.0.1" }
+  s.homepage      = "https://github.com/tmtk75/TMKCoreDataTest"
+  s.license       = { :type => 'MIT', :file => 'LICENSE.txt' }
+  s.author        = 'Tomotaka Sakuma'
+  s.platform      = :ios, '5.0'
+  s.source        = { :git => "https://github.com/tmtk75/TMKCoreDataTest.git", :tag => "0.0.1" }
   s.source_files  = 'TMKCoreDataTest', 'TMKCoreDataTest/**/*.{h,m}'
+  s.framework     = 'XCTest'
   s.exclude_files = 'Classes/Exclude'
 end
